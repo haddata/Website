@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://cloudcabinet.haddata.com/index.php -->
+<html xmlns="http://www.w3.org/1999/xhtml" style="" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths gr__cloudcabinet_haddata_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<script src="./CloudCabinet - Homepage_files/main.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="./CloudCabinet - Homepage_files/sweetalert2.all.min.js"></script><style type="text/css">body.swal2-shown {
+  overflow-y: hidden; }
+
+body.swal2-iosfix {
+  position: fixed;
+  left: 0;
+  right: 0; }
+
+.swal2-container {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  background-color: transparent;
+  z-index: 1060; }
+  .swal2-container.swal2-fade {
+    transition: background-color .1s; }
+  .swal2-container.swal2-shown {
+    background-color: rgba(0, 0, 0, 0.4); }
+
+.swal2-modal {
+  background-color: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: none;
+  position: relative;
+  max-width: 100%; }
+  .swal2-modal:focus {
+    outline: none; }
+  .swal2-modal.swal2-loading {
+    overflow-y: hidden; }
+  .swal2-modal .swal2-title {
+    color: #595959;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: none;
+    position: relative;
+    margin: 0 0 .4em;
+    padding: 0;
+    display: block;
+    word-wrap: break-word; }
+  .swal2-modal .swal2-buttonswrapper {
+    margin-top: 15px; }
+    .swal2-modal .swal2-buttonswrapper:not(.swal2-loading) .swal2-styled[disabled] {
+      opacity: .4;
+      cursor: no-drop; }
+    .swal2-modal .swal2-buttonswrapper.swal2-loading .swal2-styled.swal2-confirm {
+      box-sizing: border-box;
+      border: 4px solid transparent;
+      border-color: transparent;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      margin: 7.5px;
+      vertical-align: top;
+      background-color: transparent !important;
+      color: transparent;
+      cursor: default;
+      border-radius: 100%;
+      animation: rotate-loading 1.5s linear 0s infinite normal;
+      user-select: none; }
+    .swal2-modal .swal2-buttonswrapper.swal2-loading .swal2-styled.swal2-cancel {
+      margin-left: 30px;
+      margin-right: 30px; }
+    .swal2-modal .swal2-buttonswrapper.swal2-loading :not(.swal2-styled).swal2-confirm::after {
+      display: inline-block;
+      content: '';
+      margin-left: 5px;
+      vertical-align: -1px;
+      height: 15px;
+      width: 15px;
+      border: 3px solid #999999;
+      box-shadow: 1px 1px 1px #fff;
+      border-right-color: transparent;
+      border-radius: 50%;
+      animation: rotate-loading 1.5s linear 0s infinite normal; }
+  .swal2-modal .swal2-styled {
+    border: 0;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 15px 5px 0;
+    padding: 10px 32px; }
+    .swal2-modal .swal2-styled:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgba(50, 100, 150, 0.4); }
+  .swal2-modal .swal2-image {
+    margin: 20px auto;
+    max-width: 100%; }
+  .swal2-modal .swal2-close {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 38px;
+    height: 40px;
+    font-size: 36px;
+    line-height: 40px;
+    font-family: serif;
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    cursor: pointer;
+    color: #cccccc;
+    transition: color .1s ease; }
+    .swal2-modal .swal2-close:hover {
+      color: #d55; }
+  .swal2-modal > .swal2-input,
+  .swal2-modal > .swal2-file,
+  .swal2-modal > .swal2-textarea,
+  .swal2-modal > .swal2-select,
+  .swal2-modal > .swal2-radio,
+  .swal2-modal > .swal2-checkbox {
+    display: none; }
+  .swal2-modal .swal2-content {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    float: none;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    color: #545454;
+    word-wrap: break-word; }
+  .swal2-modal .swal2-input,
+  .swal2-modal .swal2-file,
+  .swal2-modal .swal2-textarea,
+  .swal2-modal .swal2-select,
+  .swal2-modal .swal2-radio,
+  .swal2-modal .swal2-checkbox {
+    margin: 20px auto; }
+  .swal2-modal .swal2-input,
+  .swal2-modal .swal2-file,
+  .swal2-modal .swal2-textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    border-radius: 3px;
+    border: 1px solid #d9d9d9;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06);
+    transition: border-color .3s, box-shadow .3s; }
+    .swal2-modal .swal2-input.swal2-inputerror,
+    .swal2-modal .swal2-file.swal2-inputerror,
+    .swal2-modal .swal2-textarea.swal2-inputerror {
+      border-color: #f27474 !important;
+      box-shadow: 0 0 2px #f27474 !important; }
+    .swal2-modal .swal2-input:focus,
+    .swal2-modal .swal2-file:focus,
+    .swal2-modal .swal2-textarea:focus {
+      outline: none;
+      border: 1px solid #b4dbed;
+      box-shadow: 0 0 3px #c4e6f5; }
+    .swal2-modal .swal2-input::placeholder,
+    .swal2-modal .swal2-file::placeholder,
+    .swal2-modal .swal2-textarea::placeholder {
+      color: #cccccc; }
+  .swal2-modal .swal2-range input {
+    float: left;
+    width: 80%; }
+  .swal2-modal .swal2-range output {
+    float: right;
+    width: 20%;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center; }
+  .swal2-modal .swal2-range input,
+  .swal2-modal .swal2-range output {
+    height: 43px;
+    line-height: 43px;
+    vertical-align: middle;
+    margin: 20px auto;
+    padding: 0; }
+  .swal2-modal .swal2-input {
+    height: 43px;
+    padding: 0 12px; }
+    .swal2-modal .swal2-input[type='number'] {
+      max-width: 150px; }
+  .swal2-modal .swal2-file {
+    font-size: 20px; }
+  .swal2-modal .swal2-textarea {
+    height: 108px;
+    padding: 12px; }
+  .swal2-modal .swal2-select {
+    color: #545454;
+    font-size: inherit;
+    padding: 5px 10px;
+    min-width: 40%;
+    max-width: 100%; }
+  .swal2-modal .swal2-radio {
+    border: 0; }
+    .swal2-modal .swal2-radio label:not(:first-child) {
+      margin-left: 20px; }
+    .swal2-modal .swal2-radio input,
+    .swal2-modal .swal2-radio span {
+      vertical-align: middle; }
+    .swal2-modal .swal2-radio input {
+      margin: 0 3px 0 0; }
+  .swal2-modal .swal2-checkbox {
+    color: #545454; }
+    .swal2-modal .swal2-checkbox input,
+    .swal2-modal .swal2-checkbox span {
+      vertical-align: middle; }
+  .swal2-modal .swal2-validationerror {
+    background-color: #f0f0f0;
+    margin: 0 -20px;
+    overflow: hidden;
+    padding: 10px;
+    color: gray;
+    font-size: 16px;
+    font-weight: 300;
+    display: none; }
+    .swal2-modal .swal2-validationerror::before {
+      content: '!';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: #ea7d7d;
+      color: #fff;
+      line-height: 24px;
+      text-align: center;
+      margin-right: 10px; }
+
+@supports (-ms-accelerator: true) {
+  .swal2-range input {
+    width: 100% !important; }
+  .swal2-range output {
+    display: none; } }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .swal2-range input {
+    width: 100% !important; }
+  .swal2-range output {
+    display: none; } }
+
+.swal2-icon {
+  width: 80px;
+  height: 80px;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  margin: 20px auto 30px;
+  padding: 0;
+  position: relative;
+  box-sizing: content-box;
+  cursor: default;
+  user-select: none; }
+  .swal2-icon.swal2-error {
+    border-color: #f27474; }
+    .swal2-icon.swal2-error .swal2-x-mark {
+      position: relative;
+      display: block; }
+    .swal2-icon.swal2-error [class^='swal2-x-mark-line'] {
+      position: absolute;
+      height: 5px;
+      width: 47px;
+      background-color: #f27474;
+      display: block;
+      top: 37px;
+      border-radius: 2px; }
+      .swal2-icon.swal2-error [class^='swal2-x-mark-line'][class$='left'] {
+        transform: rotate(45deg);
+        left: 17px; }
+      .swal2-icon.swal2-error [class^='swal2-x-mark-line'][class$='right'] {
+        transform: rotate(-45deg);
+        right: 16px; }
+  .swal2-icon.swal2-warning {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #f8bb86;
+    border-color: #facea8;
+    font-size: 60px;
+    line-height: 80px;
+    text-align: center; }
+  .swal2-icon.swal2-info {
+    font-family: 'Open Sans', sans-serif;
+    color: #3fc3ee;
+    border-color: #9de0f6;
+    font-size: 60px;
+    line-height: 80px;
+    text-align: center; }
+  .swal2-icon.swal2-question {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #87adbd;
+    border-color: #c9dae1;
+    font-size: 60px;
+    line-height: 80px;
+    text-align: center; }
+  .swal2-icon.swal2-success {
+    border-color: #a5dc86; }
+    .swal2-icon.swal2-success [class^='swal2-success-circular-line'] {
+      border-radius: 50%;
+      position: absolute;
+      width: 60px;
+      height: 120px;
+      transform: rotate(45deg); }
+      .swal2-icon.swal2-success [class^='swal2-success-circular-line'][class$='left'] {
+        border-radius: 120px 0 0 120px;
+        top: -7px;
+        left: -33px;
+        transform: rotate(-45deg);
+        transform-origin: 60px 60px; }
+      .swal2-icon.swal2-success [class^='swal2-success-circular-line'][class$='right'] {
+        border-radius: 0 120px 120px 0;
+        top: -11px;
+        left: 30px;
+        transform: rotate(-45deg);
+        transform-origin: 0 60px; }
+    .swal2-icon.swal2-success .swal2-success-ring {
+      width: 80px;
+      height: 80px;
+      border: 4px solid rgba(165, 220, 134, 0.2);
+      border-radius: 50%;
+      box-sizing: content-box;
+      position: absolute;
+      left: -4px;
+      top: -4px;
+      z-index: 2; }
+    .swal2-icon.swal2-success .swal2-success-fix {
+      width: 7px;
+      height: 90px;
+      position: absolute;
+      left: 28px;
+      top: 8px;
+      z-index: 1;
+      transform: rotate(-45deg); }
+    .swal2-icon.swal2-success [class^='swal2-success-line'] {
+      height: 5px;
+      background-color: #a5dc86;
+      display: block;
+      border-radius: 2px;
+      position: absolute;
+      z-index: 2; }
+      .swal2-icon.swal2-success [class^='swal2-success-line'][class$='tip'] {
+        width: 25px;
+        left: 14px;
+        top: 46px;
+        transform: rotate(45deg); }
+      .swal2-icon.swal2-success [class^='swal2-success-line'][class$='long'] {
+        width: 47px;
+        right: 8px;
+        top: 38px;
+        transform: rotate(-45deg); }
+
+.swal2-progresssteps {
+  font-weight: 600;
+  margin: 0 0 20px;
+  padding: 0; }
+  .swal2-progresssteps li {
+    display: inline-block;
+    position: relative; }
+  .swal2-progresssteps .swal2-progresscircle {
+    background: #3085d6;
+    border-radius: 2em;
+    color: #fff;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    width: 2em;
+    z-index: 20; }
+    .swal2-progresssteps .swal2-progresscircle:first-child {
+      margin-left: 0; }
+    .swal2-progresssteps .swal2-progresscircle:last-child {
+      margin-right: 0; }
+    .swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep {
+      background: #3085d6; }
+      .swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep ~ .swal2-progresscircle {
+        background: #add8e6; }
+      .swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep ~ .swal2-progressline {
+        background: #add8e6; }
+  .swal2-progresssteps .swal2-progressline {
+    background: #3085d6;
+    height: .4em;
+    margin: 0 -1px;
+    z-index: 10; }
+
+[class^='swal2'] {
+  -webkit-tap-highlight-color: transparent; }
+
+@keyframes showSweetAlert {
+  0% {
+    transform: scale(0.7); }
+  45% {
+    transform: scale(1.05); }
+  80% {
+    transform: scale(0.95); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes hideSweetAlert {
+  0% {
+    transform: scale(1);
+    opacity: 1; }
+  100% {
+    transform: scale(0.5);
+    opacity: 0; } }
+
+.swal2-show {
+  animation: showSweetAlert .3s; }
+  .swal2-show.swal2-noanimation {
+    animation: none; }
+
+.swal2-hide {
+  animation: hideSweetAlert .15s forwards; }
+  .swal2-hide.swal2-noanimation {
+    animation: none; }
+
+@keyframes animate-success-tip {
+  0% {
+    width: 0;
+    left: 1px;
+    top: 19px; }
+  54% {
+    width: 0;
+    left: 1px;
+    top: 19px; }
+  70% {
+    width: 50px;
+    left: -8px;
+    top: 37px; }
+  84% {
+    width: 17px;
+    left: 21px;
+    top: 48px; }
+  100% {
+    width: 25px;
+    left: 14px;
+    top: 45px; } }
+
+@keyframes animate-success-long {
+  0% {
+    width: 0;
+    right: 46px;
+    top: 54px; }
+  65% {
+    width: 0;
+    right: 46px;
+    top: 54px; }
+  84% {
+    width: 55px;
+    right: 0;
+    top: 35px; }
+  100% {
+    width: 47px;
+    right: 8px;
+    top: 38px; } }
+
+@keyframes rotatePlaceholder {
+  0% {
+    transform: rotate(-45deg); }
+  5% {
+    transform: rotate(-45deg); }
+  12% {
+    transform: rotate(-405deg); }
+  100% {
+    transform: rotate(-405deg); } }
+
+.swal2-animate-success-line-tip {
+  animation: animate-success-tip .75s; }
+
+.swal2-animate-success-line-long {
+  animation: animate-success-long .75s; }
+
+.swal2-success.swal2-animate-success-icon .swal2-success-circular-line-right {
+  animation: rotatePlaceholder 4.25s ease-in; }
+
+@keyframes animate-error-icon {
+  0% {
+    transform: rotateX(100deg);
+    opacity: 0; }
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1; } }
+
+.swal2-animate-error-icon {
+  animation: animate-error-icon .5s; }
+
+@keyframes animate-x-mark {
+  0% {
+    transform: scale(0.4);
+    margin-top: 26px;
+    opacity: 0; }
+  50% {
+    transform: scale(0.4);
+    margin-top: 26px;
+    opacity: 0; }
+  80% {
+    transform: scale(1.15);
+    margin-top: -6px; }
+  100% {
+    transform: scale(1);
+    margin-top: 0;
+    opacity: 1; } }
+
+.swal2-animate-x-mark {
+  animation: animate-x-mark .5s; }
+
+@keyframes rotate-loading {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+</style>
+	<!-- Include a polyfill for ES6 Promises (optional) for IE11 and Android browser -->
+	<script src="./CloudCabinet - Homepage_files/core.js"></script>
+	
+	<script src="./CloudCabinet - Homepage_files/jquery.min.js"></script>
+	<link href="./CloudCabinet - Homepage_files/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="./CloudCabinet - Homepage_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="./CloudCabinet - Homepage_files/homepage.css" rel="stylesheet" type="text/css">
+	
+    <title>CloudCabinet - Homepage</title>
+
+    <meta name="description" content="Cloud Cabinet - An easy way to store your files">
+    <meta name="keywords" content="cloud cabinet, file, system, online, keep your files, free file storage, responsive">
+		
+	<link href="./CloudCabinet - Homepage_files/css" rel="stylesheet" type="text/css">
+
+		<!-- CSS
+		================================================== -->
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="./CloudCabinet - Homepage_files/font-awesome.min(1).css">
+		<!-- Twitter Bootstrap css -->
+        <link rel="stylesheet" href="./CloudCabinet - Homepage_files/bootstrap.min(1).css">
+		<!-- jquery.fancybox  -->
+        <link rel="stylesheet" href="./CloudCabinet - Homepage_files/jquery.fancybox.css">
+		<!-- animate -->
+        <link rel="stylesheet" href="./CloudCabinet - Homepage_files/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="./CloudCabinet - Homepage_files/main.css">
+		<!-- media-queries -->
+        <link rel="stylesheet" href="./CloudCabinet - Homepage_files/media-queries.css">
+
+		<!-- Modernizer Script for old Browsers -->
+        <script src="./CloudCabinet - Homepage_files/modernizr-2.6.2.min.js"></script>
+
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style><script type="text/javascript" charset="UTF-8" src="./CloudCabinet - Homepage_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./CloudCabinet - Homepage_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="./CloudCabinet - Homepage_files/stats.js"></script></head>
+
+<body id="body" class="" data-gr-c-s-loaded="true">
+
+    
+            
+                <script>
+                    swal(
+                      'Oops...',
+                      'Wrong username and/or password! Please try again.',
+                      'error'
+                    )
+                </script>
+            
+            
+	<div id="header">
+	</div>
+	
+	<!-- preloader -->
+		<div id="preloader" style="display: none;">
+			<img src="./CloudCabinet - Homepage_files/preloader.gif" alt="Preloader">
+		</div>
+		<!-- end preloader -->
+
+        <!-- 
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-fixed-top navbar" style="background-color: rgb(14, 180, 147);">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars fa-2x"></i>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+                    <a class="navbar-brand" href="http://cloudcabinet.haddata.com/index.php#body">
+						<h1 id="logo">
+							<img style="width: 200px;" src="./CloudCabinet - Homepage_files/logo.png" alt="Brandi">
+						</h1>
+					</a>
+					<!-- /logo -->
+                </div>
+
+				<!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li class="current"><a href="http://cloudcabinet.haddata.com/index.php#body" class="">Home</a></li>
+                        <li><a href="http://cloudcabinet.haddata.com/index.php#introduction" class="current">Introduction</a></li>
+                        <li><a href="http://cloudcabinet.haddata.com/index.php#why" class="">Why CloudCabinet?</a></li>
+                        <li><a href="http://cloudcabinet.haddata.com/index.php#how">How it works?</a></li>
+                        <li><a href="http://cloudcabinet.haddata.com/index.php#start">Start</a></li>
+                    </ul>
+                </nav>
+				<!-- /main nav -->
+				
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+		
+		
+		
+        <!--
+        Home Slider
+        ==================================== -->
+		
+		<section id="slider" style="height: 1077px;">
+		    
+		    	<div id="logreg-wrapper">
+
+		<div id="logreg-form-wrapper">
+
+            
+			<form id="login-form" class="form-group" style="display: none;" action="http://cloudcabinet.haddata.com/login.php" method="post">
+				<label style="font-size: 25px; font-weight: bold; line-height: 0.7;">Log in</label><br>
+				<label style="font-weight: 500;"> Or <a href="http://cloudcabinet.haddata.com/index.php#" onclick="LogSwitch()">create an account.</a></label><br><br>
+				<input class="form-control" type="text" name="email" placeholder="Email"><br>
+				<input class="form-control" type="password" name="password" placeholder="Password"><br>
+				<input class="form-control" type="submit" value="Log In" style="background-color: #007f93; color: white; height: 50px; font-size: 20px;">
+			</form>
+
+			<form id="signup-form" class="form-group" action="http://cloudcabinet.haddata.com/signup.php" method="post">
+				<label style="font-size: 25px; font-weight: bold; line-height: 0.7;">Sign Up</label><br>
+				<label style="font-weight: 500;"> Or <a href="http://cloudcabinet.haddata.com/index.php#" onclick="LogSwitch()">login to your account.</a></label><br><br>
+				<input class="form-control" type="text" name="fullname" placeholder="Full Name"><br>
+				<label id="emailErrLabel" style="display: none; color: red;"><i class="fa fa-times" aria-hidden="true" style="padding-right: 5px; "></i>This email is invalid!</label>
+				<input class="form-control" type="email" name="email" placeholder="Email" id="email" onkeyup="validate(&#39;email&#39;)"><br>
+				<input class="form-control" onkeyup="validate(&#39;password&#39;)" id="pass1" type="password" name="password" placeholder="Password"><br>
+				<label id="passErrLabel" style="display: none; color: red;"><i class="fa fa-times" aria-hidden="true" style="padding-right: 5px; "></i>Passwords do not match!</label>
+				<label id="passErrLabel1" style="display: none; color: red;"><i class="fa fa-times" aria-hidden="true" style="padding-right: 5px; "></i>Password must contain 6-25 characters!</label>
+				<input class="form-control" id="pass2" onkeyup="validate(&#39;password&#39;)" type="password" name="passwordConfirm" placeholder="Confirm Password"><br>
+				<input type="checkbox" style="cursor: pointer; vertical-align: middle; margin-top: -1px !important; margin: 5px; transform: scale(1.5);" name="checkbox"> <label style="vertical-align: middle;">I agree with <a href="http://cloudcabinet.haddata.com/Terms%20and%20Conditions.pdf" target="_blank" style="color: #007f93;">Terms and Conditions</a></label><br>
+				<input id="submitForm" class="form-control" type="submit" value="Log In" style="background-color: #007f93; color: white; height: 50px; font-size: 20px;">
+			</form>
+
+			
+		</div>
+	
+	</div> 
+		    
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="height: 1077px;">
+			
+				<!-- Indicators bullet -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+				</ol>
+				<!-- End Indicators bullet -->				
+				
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox" style="height: 1077px;">
+					
+					<!-- single slide -->
+					<div class="item active" style="background-image: url(&quot;img/banner.png&quot;); height: 1077px;">
+						<div class="carousel-caption">
+							<h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated animated" style="visibility: visible; animation-duration: 700ms; animation-delay: 500ms; animation-name: bounceInDown;"><span> CloudCabinet</span></h2>
+							<h3 data-wow-duration="1000ms" class="wow slideInLeft animated animated" style="visibility: visible; animation-duration: 1000ms; animation-name: slideInLeft;"><span class="color">Easy, simple and responsive </span> </h3>
+							<p data-wow-duration="1000ms" class="wow slideInRight animated animated" style="visibility: visible; animation-duration: 1000ms; animation-name: slideInRight;">The best way to store your data</p>
+							
+							<ul class="social-links text-center">
+								<li><a href="http://cloudcabinet.haddata.com/index.php"><i class="fa fa-twitter fa-lg"></i></a></li>
+								<li><a href="http://cloudcabinet.haddata.com/index.php"><i class="fa fa-facebook fa-lg"></i></a></li>
+								<li><a href="http://cloudcabinet.haddata.com/index.php"><i class="fa fa-google-plus fa-lg"></i></a></li>
+								<li><a href="http://cloudcabinet.haddata.com/index.php"><i class="fa fa-dribbble fa-lg"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- end single slide -->
+					
+					<!-- single slide -->
+					<div class="item" style="background-image: url(&quot;img/banner.png&quot;); height: 1077px;">
+						<div class="carousel-caption">
+							<h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated animated" style="visibility: visible; animation-duration: 700ms; animation-delay: 500ms; animation-name: bounceInDown;"><span> CloudCabinet</span></h2>
+							<h3 data-wow-duration="1000ms" class="wow slideInLeft animated animated" style="visibility: visible; animation-duration: 1000ms; animation-name: slideInLeft;"><span class="color">Easy, simple and responsive </span> </h3>
+							<p data-wow-duration="1000ms" class="wow slideInRight animated animated" style="visibility: visible; animation-duration: 1000ms; animation-name: slideInRight;">The best way to store your data</p>
+							
+							<ul class="social-links text-center">
+								<li><a href="http://cloudcabinet.haddata.com/index.php"><i class="fa fa-twitter fa-lg"></i></a></li>
+								<li><a href="http://cloudcabinet.haddata.com/index.php"><i class="fa fa-facebook fa-lg"></i></a></li>
+								<li><a href="http://cloudcabinet.haddata.com/index.php"><i class="fa fa-google-plus fa-lg"></i></a></li>
+								<li><a href="http://cloudcabinet.haddata.com/index.php"><i class="fa fa-dribbble fa-lg"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- end single slide -->
+					
+				</div>
+				<!-- End Wrapper for slides -->
+				
+			</div>
+		</section>
+	
+	
+		<section id="introduction" class="features">
+			<div class="container">
+				<div class="row">
+				
+					<div class="sec-title text-center mb50 wow bounceInDown animated animated" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-name: bounceInDown;">
+						<h2>What is Cloud Cabinet?</h2>
+						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+					</div>
+
+					<!-- service item -->
+					<div style="padding: 0px 3%; visibility: visible; animation-duration: 500ms; animation-name: fadeInLeft;" class="col-md-6 wow fadeInLeft animated" data-wow-duration="500ms">
+						<div id="cloudcabinet-draw">
+						    
+						</div>
+					</div>
+					<!-- end service item -->
+					
+					<!-- service item -->
+					<div class="col-md-6 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="500ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 500ms; animation-name: fadeInRight;">
+						<div class="service-item">
+							<div class="service-icon">
+								<i style="padding: 0px 5px 0px 5px;" class="fa fa-question fa-3x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h2 style="color: #062033; font-weight: bold; margin-bottom: 15px;">A fast, reliable and simple way to store your data</h2>
+								<p style="font-size: 18px; margin-top: 30px; margin-bottom: 30px;">Have you ever had messed up folders and files, that you could not manage to keep tidy? If so, CloudCabinet is the best solution! It applies an inovative, yet simple and intuitive way to store your data.</p>
+								<button style="background-color: #0eb493; border: none; display: block; margin: auto; margin-top: 20px !important; color: white; padding: 10px 20px 10px 20px;" class="btn btn-primary">Read More</button>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->
+						
+				</div>
+			</div>
+		</section>
+		
+		<section id="why" class="features">
+			<div class="container">
+				<div class="row">
+				
+					<div class="sec-title text-center mb50 wow bounceInDown animated animated" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-name: bounceInDown;">
+						<h2>Why would you chose CloudCabinet?</h2>
+						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+					</div>
+
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInLeft animated" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-name: fadeInLeft;">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-github fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Reliable</h3>
+								<p>CloudCabinet uses Amazon S3 as the base engine to keep your files. That way, your data is backed up and protected.</p>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->
+					
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="500ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 500ms; animation-name: fadeInUp;">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-pencil fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Simple and Smart</h3>
+								<p>CloudCabinet uses the oldfashioned but yet inovative way to store files. You will never have to worry about tidiness again, because CloudCabinet does that for you!</p>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->
+					
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="900ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 900ms; animation-name: fadeInRight;">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-user fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>24/7 Support</h3>
+								<p>CloudCabinet administrators are always there to answer any questions you have, or solve any problems</p>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->
+						
+				</div>
+			</div>
+		</section>
+		
+	    <section class="features">
+			<div class="container">
+				<div class="row">
+				
+					<div style="margin-bottom: 0px; visibility: visible; animation-duration: 500ms; animation-name: bounceInDown;" class="sec-title text-center mb50 wow bounceInDown animated animated" data-wow-duration="500ms">
+						<h2>Responsive on all devices</h2>
+						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+						<p style="text-align: center;">Cloud Cabinet is highly responsive and it works on all devices! Have all the files with you whereever you go!</p>
+					</div>
+
+					<!-- service item -->
+					<div style="padding: 0px 50px; visibility: visible; animation-duration: 500ms; animation-name: fadeInUp;" class="col-md-12 wow fadeInUp animated" data-wow-duration="500ms">
+						<div class="responsive-cabinet">
+						</div>
+					</div>
+					<!-- end service item -->
+						
+				</div>
+			</div>
+		</section>
+
+		<section id="facts" class="facts" style="background-image: url(&quot;img/tech1.jpg&quot;); background-position: 50% 33px;">
+			<div id="how" class="parallax-overlay">
+				<div class="container">
+    				<div class="row">
+    				
+    					<div class="sec-title text-center">
+    						<h2>How it works?</h2>
+    						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+    					</div>
+    					
+    					<div class="sec-sub-title text-center">
+    						<p style="color: white;">Very similar to the real-life file storage! You have an online Cabinet, hosted on our cloud. Inside the cabinet, as you may probably think, there are Drawers! Every Drawer has folders and this is where you save your files - in folders! That way, You will save your files where you should - in proper folders and it will be tidy all the time!</p>
+    					</div>
+    					
+    				</div>
+    			</div>
+			</div>
+		</section>
+		
+	    <section id="start" class="features">
+			<div class="container">
+				<div class="row">
+				
+					<div style="margin-bottom: 0px; visibility: visible; animation-duration: 500ms; animation-name: bounceInDown;" class="sec-title text-center mb50 wow bounceInDown animated animated" data-wow-duration="500ms">
+						<h2>How to start?</h2>
+						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+						<p style="font-size: 22px; text-align: center; margin-top: 25px; margin-bottom: 25px;">All you have to do is join CloudCabinet by creating an account. Once your account is created, you get your Cabinet ready, for free!</p>
+						<a href="http://cloudcabinet.haddata.com/index.php#body"><button style="background-color: #0eb493; border: none; display: block; margin: auto; margin-top: 20px !important; color: white; padding: 10px 20px 10px 20px;" class="btn btn-primary">Join Now!</button></a>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		
+		<footer id="footer" class="footer">
+			<div class="container">
+				<div class="row">
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated animated" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-name: fadeInUp;">
+						<div class="footer-single">
+							<img style="width: 200px;" src="./CloudCabinet - Homepage_files/logo.png" alt="">
+							<p>The best way to store your data.</p>
+						</div>
+					</div>
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated animated" data-wow-duration="500ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 300ms; animation-name: fadeInUp;">
+					</div>
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated animated" data-wow-duration="500ms" data-wow-delay="600ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 600ms; animation-name: fadeInUp;">
+					</div>
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated animated" data-wow-duration="500ms" data-wow-delay="900ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 900ms; animation-name: fadeInUp;">
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<p class="copyright text-center">
+							Copyright © 2017 All rights reserved.
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<a href="javascript:void(0);" id="back-top" style="display: block;"><i class="fa fa-angle-up fa-3x"></i></a>
+
+		<!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="./CloudCabinet - Homepage_files/jquery-1.11.1.min.js"></script>
+		<!-- Single Page Nav -->
+        <script src="./CloudCabinet - Homepage_files/jquery.singlePageNav.min.js"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="./CloudCabinet - Homepage_files/bootstrap.min.js"></script>
+		<!-- jquery.fancybox.pack -->
+        <script src="./CloudCabinet - Homepage_files/jquery.fancybox.pack.js"></script>
+		<!-- jquery.mixitup.min -->
+        <script src="./CloudCabinet - Homepage_files/jquery.mixitup.min.js"></script>
+		<!-- jquery.parallax -->
+        <script src="./CloudCabinet - Homepage_files/jquery.parallax-1.1.3.js"></script>
+		<!-- jquery.countTo -->
+        <script src="./CloudCabinet - Homepage_files/jquery-countTo.js"></script>
+		<!-- jquery.appear -->
+        <script src="./CloudCabinet - Homepage_files/jquery.appear.js"></script>
+		<!-- Contact form validation -->
+		<script src="./CloudCabinet - Homepage_files/jquery.form.js"></script>
+		<script src="./CloudCabinet - Homepage_files/jquery.validate.min.js"></script>
+		<!-- Google Map -->
+        <script type="text/javascript" src="./CloudCabinet - Homepage_files/js"></script>
+		<!-- jquery easing -->
+        <script src="./CloudCabinet - Homepage_files/jquery.easing.min.js"></script>
+		<!-- jquery easing -->
+        <script src="./CloudCabinet - Homepage_files/wow.min.js"></script>
+		<script>
+			var wow = new WOW ({
+				boxClass:     'wow',      // animated element css class (default is wow)
+				animateClass: 'animated', // animation css class (default is animated)
+				offset:       120,          // distance to the element when triggering the animation (default is 0)
+				mobile:       false,       // trigger animations on mobile devices (default is true)
+				live:         true        // act on asynchronously loaded content (default is true)
+			  }
+			);
+			wow.init();
+		</script> 
+		<!-- Custom Functions -->
+        <script src="./CloudCabinet - Homepage_files/custom.js"></script>
+		
+		<script type="text/javascript">
+			$(function(){
+				/* ========================================================================= */
+				/*	Contact Form
+				/* ========================================================================= */
+				
+				$('#contact-form').validate({
+					rules: {
+						name: {
+							required: true,
+							minlength: 2
+						},
+						email: {
+							required: true,
+							email: true
+						},
+						message: {
+							required: true
+						}
+					},
+					messages: {
+						name: {
+							required: "come on, you have a name don't you?",
+							minlength: "your name must consist of at least 2 characters"
+						},
+						email: {
+							required: "no email, no message"
+						},
+						message: {
+							required: "um...yea, you have to write something to send this form.",
+							minlength: "thats all? really?"
+						}
+					},
+					submitHandler: function(form) {
+						$(form).ajaxSubmit({
+							type:"POST",
+							data: $(form).serialize(),
+							url:"process.php",
+							success: function() {
+								$('#contact-form :input').attr('disabled', 'disabled');
+								$('#contact-form').fadeTo( "slow", 0.15, function() {
+									$(this).find(':input').attr('disabled', 'disabled');
+									$(this).find('label').css('cursor','default');
+									$('#success').fadeIn();
+								});
+							},
+							error: function() {
+								$('#contact-form').fadeTo( "slow", 0.15, function() {
+									$('#error').fadeIn();
+								});
+							}
+						});
+					}
+				});
+			});
+		</script>
+	
+	
+	
+
+
+
+
+<span style="border-radius: 3px; text-indent: 20px; width: auto; padding: 0px 4px 0px 0px; text-align: center; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif; color: rgb(255, 255, 255); background: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjYmQwODFjIj48L3BhdGg+PC9nPjwvc3ZnPg==&quot;) 3px 50% / 14px 14px no-repeat rgb(189, 8, 28); position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none; -webkit-font-smoothing: antialiased;">Save</span><span style="width: 24px; height: 24px; background: url(&quot;data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxtYXNrIGlkPSJtIj48cmVjdCBmaWxsPSIjZmZmIiB4PSIwIiB5PSIwIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHJ4PSI2IiByeT0iNiIvPjxyZWN0IGZpbGw9IiMwMDAiIHg9IjUiIHk9IjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgcng9IjEiIHJ5PSIxIi8+PHJlY3QgZmlsbD0iIzAwMCIgeD0iMTAiIHk9IjAiIHdpZHRoPSI0IiBoZWlnaHQ9IjI0Ii8+PHJlY3QgZmlsbD0iIzAwMCIgeD0iMCIgeT0iMTAiIHdpZHRoPSIyNCIgaGVpZ2h0PSI0Ii8+PC9tYXNrPjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9IiNmZmYiIG1hc2s9InVybCgjbSkiLz48L3N2Zz4=&quot;) 50% 50% / 14px 14px no-repeat rgba(0, 0, 0, 0.4); position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none; border-radius: 12px;"></span></body></html>

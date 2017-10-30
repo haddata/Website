@@ -1,0 +1,104 @@
+#logreg-wrapper
+{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 450px;
+    z-index: 100;
+    max-width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: #f4f7f9;
+    border-left: 10px solid #007f93;
+    min-height: 550px;
+}
+
+#logreg-wrapper a
+{
+    color: #007f93 !important;
+}
+
+#cloudcabinet-draw
+{
+    background-image: url(img/cloudcabinet.png);
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    min-height: 480px;
+}
+
+.carousel-caption
+{
+    right: unset !important;
+    padding-left: 10% !important;
+    left: unset !important;
+}
+
+#logreg-form-wrapper
+{
+    padding-top: 150px;
+    width: 80%;
+    margin: auto;
+}
+
+body
+{
+}
+
+.form-control:focus
+{
+    border-color: #007f93;
+}
+
+.form-control
+{
+    height: 40px;
+    color: #007f93;
+    font-size: 18px;
+}
+
+#header
+{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    height: 50px;
+    background-color: #007f93;
+}
+
+#presentation-wrapper
+{
+    width: 600px;
+    float: left;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+button
+{
+    cursor: pointer;
+}
+
+.responsive-cabinet
+{
+    width: 100%;
+    padding-top: 65%;
+    background-image: url(img/responsive.png);
+    background-size: 100% 100%;
+}
+
+@media only screen and (max-width: 1200px)
+{
+    #slider
+    {
+        margin-top: 100vh;
+    }
+    
+    #logreg-wrapper
+    {
+        width: 100%;
+        border: none;
+    }
+}
