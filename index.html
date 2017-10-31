@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!-- saved from url=(0041)http://cloudcabinet.haddata.com/index.php -->
-<html xmlns="http://www.w3.org/1999/xhtml" style="" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths gr__cloudcabinet_haddata_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- saved from url=(0033)https://haddata.com/cloudcabinet/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" style="" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths gr__haddata_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-	<script src="./CloudCabinet - Homepage_files/main.js"></script>
+	<script src="./js/main.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<script src="./CloudCabinet - Homepage_files/sweetalert2.all.min.js"></script><style type="text/css">body.swal2-shown {
+	<script src="./js/sweetalerts2/sweetalert2.all.min.js"></script><style type="text/css">body.swal2-shown {
   overflow-y: hidden; }
 
 body.swal2-iosfix {
@@ -521,66 +521,56 @@ body.swal2-iosfix {
     transform: rotate(360deg); } }
 </style>
 	<!-- Include a polyfill for ES6 Promises (optional) for IE11 and Android browser -->
-	<script src="./CloudCabinet - Homepage_files/core.js"></script>
-	
-	<script src="./CloudCabinet - Homepage_files/jquery.min.js"></script>
-	<link href="./CloudCabinet - Homepage_files/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="./CloudCabinet - Homepage_files/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="./CloudCabinet - Homepage_files/homepage.css" rel="stylesheet" type="text/css">
-	
+	<script src="./js/sweetalerts2/core.js"></script>
+
+	<script src="./js/jquery.min.js"></script>
+	<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="./css/homepage.css" rel="stylesheet" type="text/css">
+
     <title>CloudCabinet - Homepage</title>
 
     <meta name="description" content="Cloud Cabinet - An easy way to store your files">
     <meta name="keywords" content="cloud cabinet, file, system, online, keep your files, free file storage, responsive">
-		
-	<link href="./CloudCabinet - Homepage_files/css" rel="stylesheet" type="text/css">
+
+	<!-- <link href="./CloudCabinet - Homepage_files/css" rel="stylesheet" type="text/css"> -->
 
 		<!-- CSS
 		================================================== -->
 		<!-- Fontawesome Icon font -->
-        <link rel="stylesheet" href="./CloudCabinet - Homepage_files/font-awesome.min(1).css">
+        <link rel="stylesheet" href="./css/font-awesome.min.css">
 		<!-- Twitter Bootstrap css -->
-        <link rel="stylesheet" href="./CloudCabinet - Homepage_files/bootstrap.min(1).css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
 		<!-- jquery.fancybox  -->
-        <link rel="stylesheet" href="./CloudCabinet - Homepage_files/jquery.fancybox.css">
+        <link rel="stylesheet" href="./css/jquery.fancybox.css">
 		<!-- animate -->
-        <link rel="stylesheet" href="./CloudCabinet - Homepage_files/animate.css">
+        <link rel="stylesheet" href="./css/animate.css">
 		<!-- Main Stylesheet -->
-        <link rel="stylesheet" href="./CloudCabinet - Homepage_files/main.css">
+        <link rel="stylesheet" href="./css/main.css">
 		<!-- media-queries -->
-        <link rel="stylesheet" href="./CloudCabinet - Homepage_files/media-queries.css">
+        <link rel="stylesheet" href="./css/media-queries.css">
 
 		<!-- Modernizer Script for old Browsers -->
-        <script src="./CloudCabinet - Homepage_files/modernizr-2.6.2.min.js"></script>
+        <script src="./js/modernizr-2.6.2.min.js"></script>
 
-<style type="text/css">.fancybox-margin{margin-right:0px;}</style><script type="text/javascript" charset="UTF-8" src="./CloudCabinet - Homepage_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./CloudCabinet - Homepage_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="./CloudCabinet - Homepage_files/stats.js"></script></head>
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
 
-<body id="body" class="" data-gr-c-s-loaded="true">
+<body id="body" data-gr-c-s-loaded="true">
 
-    
-            
-                <script>
-                    swal(
-                      'Oops...',
-                      'Wrong username and/or password! Please try again.',
-                      'error'
-                    )
-                </script>
-            
-            
+
 	<div id="header">
 	</div>
-	
+
 	<!-- preloader -->
 		<div id="preloader" style="display: none;">
-			<img src="./CloudCabinet - Homepage_files/preloader.gif" alt="Preloader">
+			<img src="./img/preloader.gif" alt="Preloader">
 		</div>
 		<!-- end preloader -->
 
-        <!-- 
+        <!--
         Fixed Navigation
         ==================================== -->
-        <header id="navigation" class="navbar-fixed-top navbar" style="background-color: rgb(14, 180, 147);">
+        <header id="navigation" class="navbar-fixed-top navbar">
             <div class="container">
                 <div class="navbar-header">
                     <!-- responsive nav button -->
@@ -589,11 +579,11 @@ body.swal2-iosfix {
                         <i class="fa fa-bars fa-2x"></i>
                     </button>
 					<!-- /responsive nav button -->
-					
+
 					<!-- logo -->
-                    <a class="navbar-brand" href="http://cloudcabinet.haddata.com/index.php#body">
+                    <a class="navbar-brand" href="https://haddata.com/cloudcabinet/#body">
 						<h1 id="logo">
-							<img style="width: 200px;" src="./CloudCabinet - Homepage_files/logo.png" alt="Brandi">
+							<img style="width: 200px;" src="./img/logo.png" alt="Brandi">
 						</h1>
 					</a>
 					<!-- /logo -->
@@ -602,45 +592,45 @@ body.swal2-iosfix {
 				<!-- main nav -->
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
-                        <li class="current"><a href="http://cloudcabinet.haddata.com/index.php#body" class="">Home</a></li>
-                        <li><a href="http://cloudcabinet.haddata.com/index.php#introduction" class="current">Introduction</a></li>
-                        <li><a href="http://cloudcabinet.haddata.com/index.php#why" class="">Why CloudCabinet?</a></li>
-                        <li><a href="http://cloudcabinet.haddata.com/index.php#how">How it works?</a></li>
-                        <li><a href="http://cloudcabinet.haddata.com/index.php#start">Start</a></li>
+                        <li class="current"><a href="#body">Home</a></li>
+                        <li><a href="#introduction" class="current">Introduction</a></li>
+                        <li><a href="#why">Why CloudCabinet?</a></li>
+                        <li><a href="#how">How it works?</a></li>
+                        <li><a href="#start">Start</a></li>
                     </ul>
                 </nav>
 				<!-- /main nav -->
-				
+
             </div>
         </header>
         <!--
         End Fixed Navigation
         ==================================== -->
-		
-		
-		
+
+
+
         <!--
         Home Slider
         ==================================== -->
-		
+
 		<section id="slider" style="height: 1077px;">
-		    
+
 		    	<div id="logreg-wrapper">
 
 		<div id="logreg-form-wrapper">
 
-            
-			<form id="login-form" class="form-group" style="display: none;" action="http://cloudcabinet.haddata.com/login.php" method="post">
+
+			<form id="login-form" class="form-group" style="display: none;" action="https://haddata.com/cloudcabinet/login.php" method="post">
 				<label style="font-size: 25px; font-weight: bold; line-height: 0.7;">Log in</label><br>
-				<label style="font-weight: 500;"> Or <a href="http://cloudcabinet.haddata.com/index.php#" onclick="LogSwitch()">create an account.</a></label><br><br>
+				<label style="font-weight: 500;"> Or <a href="https://haddata.com/cloudcabinet/#" onclick="LogSwitch()">create an account.</a></label><br><br>
 				<input class="form-control" type="text" name="email" placeholder="Email"><br>
 				<input class="form-control" type="password" name="password" placeholder="Password"><br>
 				<input class="form-control" type="submit" value="Log In" style="background-color: #007f93; color: white; height: 50px; font-size: 20px;">
 			</form>
 
-			<form id="signup-form" class="form-group" action="http://cloudcabinet.haddata.com/signup.php" method="post">
+			<form id="signup-form" class="form-group" action="https://haddata.com/cloudcabinet/signup.php" method="post">
 				<label style="font-size: 25px; font-weight: bold; line-height: 0.7;">Sign Up</label><br>
-				<label style="font-weight: 500;"> Or <a href="http://cloudcabinet.haddata.com/index.php#" onclick="LogSwitch()">login to your account.</a></label><br><br>
+				<label style="font-weight: 500;"> Or <a href="https://haddata.com/cloudcabinet/#" onclick="LogSwitch()">login to your account.</a></label><br><br>
 				<input class="form-control" type="text" name="fullname" placeholder="Full Name"><br>
 				<label id="emailErrLabel" style="display: none; color: red;"><i class="fa fa-times" aria-hidden="true" style="padding-right: 5px; "></i>This email is invalid!</label>
 				<input class="form-control" type="email" name="email" placeholder="Email" id="email" onkeyup="validate(&#39;email&#39;)"><br>
@@ -652,88 +642,88 @@ body.swal2-iosfix {
 				<input id="submitForm" class="form-control" type="submit" value="Log In" style="background-color: #007f93; color: white; height: 50px; font-size: 20px;">
 			</form>
 
-			
+
 		</div>
-	
-	</div> 
-		    
+
+	</div>
+
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="height: 1077px;">
-			
+
 				<!-- Indicators bullet -->
 				<ol class="carousel-indicators">
 					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 					<li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
 				</ol>
-				<!-- End Indicators bullet -->				
-				
+				<!-- End Indicators bullet -->
+
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox" style="height: 1077px;">
-					
+
 					<!-- single slide -->
-					<div class="item active" style="background-image: url(&quot;img/banner.png&quot;); height: 1077px;">
+					<div class="item active" style="background-image: url(&quot;./img/banner.png&quot;); height: 1077px;">
 						<div class="carousel-caption">
 							<h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated animated" style="visibility: visible; animation-duration: 700ms; animation-delay: 500ms; animation-name: bounceInDown;"><span> CloudCabinet</span></h2>
 							<h3 data-wow-duration="1000ms" class="wow slideInLeft animated animated" style="visibility: visible; animation-duration: 1000ms; animation-name: slideInLeft;"><span class="color">Easy, simple and responsive </span> </h3>
 							<p data-wow-duration="1000ms" class="wow slideInRight animated animated" style="visibility: visible; animation-duration: 1000ms; animation-name: slideInRight;">The best way to store your data</p>
-							
+
 							<ul class="social-links text-center">
-								<li><a href="http://cloudcabinet.haddata.com/index.php"><i class="fa fa-twitter fa-lg"></i></a></li>
-								<li><a href="http://cloudcabinet.haddata.com/index.php"><i class="fa fa-facebook fa-lg"></i></a></li>
-								<li><a href="http://cloudcabinet.haddata.com/index.php"><i class="fa fa-google-plus fa-lg"></i></a></li>
-								<li><a href="http://cloudcabinet.haddata.com/index.php"><i class="fa fa-dribbble fa-lg"></i></a></li>
+								<li><a href="https://haddata.com/cloudcabinet/"><i class="fa fa-twitter fa-lg"></i></a></li>
+								<li><a href="https://haddata.com/cloudcabinet/"><i class="fa fa-facebook fa-lg"></i></a></li>
+								<li><a href="https://haddata.com/cloudcabinet/"><i class="fa fa-google-plus fa-lg"></i></a></li>
+								<li><a href="https://haddata.com/cloudcabinet/"><i class="fa fa-dribbble fa-lg"></i></a></li>
 							</ul>
 						</div>
 					</div>
 					<!-- end single slide -->
-					
+
 					<!-- single slide -->
-					<div class="item" style="background-image: url(&quot;img/banner.png&quot;); height: 1077px;">
+					<div class="item" style="background-image: url(&quot;./img/banner.png&quot;); height: 1077px;">
 						<div class="carousel-caption">
 							<h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated animated" style="visibility: visible; animation-duration: 700ms; animation-delay: 500ms; animation-name: bounceInDown;"><span> CloudCabinet</span></h2>
 							<h3 data-wow-duration="1000ms" class="wow slideInLeft animated animated" style="visibility: visible; animation-duration: 1000ms; animation-name: slideInLeft;"><span class="color">Easy, simple and responsive </span> </h3>
 							<p data-wow-duration="1000ms" class="wow slideInRight animated animated" style="visibility: visible; animation-duration: 1000ms; animation-name: slideInRight;">The best way to store your data</p>
-							
+
 							<ul class="social-links text-center">
-								<li><a href="http://cloudcabinet.haddata.com/index.php"><i class="fa fa-twitter fa-lg"></i></a></li>
-								<li><a href="http://cloudcabinet.haddata.com/index.php"><i class="fa fa-facebook fa-lg"></i></a></li>
-								<li><a href="http://cloudcabinet.haddata.com/index.php"><i class="fa fa-google-plus fa-lg"></i></a></li>
-								<li><a href="http://cloudcabinet.haddata.com/index.php"><i class="fa fa-dribbble fa-lg"></i></a></li>
+								<li><a href="https://haddata.com/cloudcabinet/"><i class="fa fa-twitter fa-lg"></i></a></li>
+								<li><a href="https://haddata.com/cloudcabinet/"><i class="fa fa-facebook fa-lg"></i></a></li>
+								<li><a href="https://haddata.com/cloudcabinet/"><i class="fa fa-google-plus fa-lg"></i></a></li>
+								<li><a href="https://haddata.com/cloudcabinet/"><i class="fa fa-dribbble fa-lg"></i></a></li>
 							</ul>
 						</div>
 					</div>
 					<!-- end single slide -->
-					
+
 				</div>
 				<!-- End Wrapper for slides -->
-				
+
 			</div>
 		</section>
-	
-	
+
+
 		<section id="introduction" class="features">
 			<div class="container">
 				<div class="row">
-				
-					<div class="sec-title text-center mb50 wow bounceInDown animated animated" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-name: bounceInDown;">
+
+					<div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms" style="visibility: hidden; animation-duration: 500ms; animation-name: none;">
 						<h2>What is Cloud Cabinet?</h2>
 						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
 					</div>
 
 					<!-- service item -->
-					<div style="padding: 0px 3%; visibility: visible; animation-duration: 500ms; animation-name: fadeInLeft;" class="col-md-6 wow fadeInLeft animated" data-wow-duration="500ms">
+					<div style="padding: 0px 3%; visibility: hidden; animation-duration: 500ms; animation-name: none;" class="col-md-6 wow fadeInLeft" data-wow-duration="500ms">
 						<div id="cloudcabinet-draw">
-						    
+
 						</div>
 					</div>
 					<!-- end service item -->
-					
+
 					<!-- service item -->
-					<div class="col-md-6 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="500ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 500ms; animation-name: fadeInRight;">
+					<div class="col-md-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="500ms" style="visibility: hidden; animation-duration: 500ms; animation-delay: 500ms; animation-name: none;">
 						<div class="service-item">
 							<div class="service-icon">
 								<i style="padding: 0px 5px 0px 5px;" class="fa fa-question fa-3x"></i>
 							</div>
-							
+
 							<div class="service-desc">
 								<h2 style="color: #062033; font-weight: bold; margin-bottom: 15px;">A fast, reliable and simple way to store your data</h2>
 								<p style="font-size: 18px; margin-top: 30px; margin-bottom: 30px;">Have you ever had messed up folders and files, that you could not manage to keep tidy? If so, CloudCabinet is the best solution! It applies an inovative, yet simple and intuitive way to store your data.</p>
@@ -742,27 +732,27 @@ body.swal2-iosfix {
 						</div>
 					</div>
 					<!-- end service item -->
-						
+
 				</div>
 			</div>
 		</section>
-		
+
 		<section id="why" class="features">
 			<div class="container">
 				<div class="row">
-				
-					<div class="sec-title text-center mb50 wow bounceInDown animated animated" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-name: bounceInDown;">
+
+					<div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms" style="visibility: hidden; animation-duration: 500ms; animation-name: none;">
 						<h2>Why would you chose CloudCabinet?</h2>
 						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
 					</div>
 
 					<!-- service item -->
-					<div class="col-md-4 wow fadeInLeft animated" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-name: fadeInLeft;">
+					<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms" style="visibility: hidden; animation-duration: 500ms; animation-name: none;">
 						<div class="service-item">
 							<div class="service-icon">
 								<i class="fa fa-github fa-2x"></i>
 							</div>
-							
+
 							<div class="service-desc">
 								<h3>Reliable</h3>
 								<p>CloudCabinet uses Amazon S3 as the base engine to keep your files. That way, your data is backed up and protected.</p>
@@ -770,14 +760,14 @@ body.swal2-iosfix {
 						</div>
 					</div>
 					<!-- end service item -->
-					
+
 					<!-- service item -->
-					<div class="col-md-4 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="500ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 500ms; animation-name: fadeInUp;">
+					<div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms" style="visibility: hidden; animation-duration: 500ms; animation-delay: 500ms; animation-name: none;">
 						<div class="service-item">
 							<div class="service-icon">
 								<i class="fa fa-pencil fa-2x"></i>
 							</div>
-							
+
 							<div class="service-desc">
 								<h3>Simple and Smart</h3>
 								<p>CloudCabinet uses the oldfashioned but yet inovative way to store files. You will never have to worry about tidiness again, because CloudCabinet does that for you!</p>
@@ -785,14 +775,14 @@ body.swal2-iosfix {
 						</div>
 					</div>
 					<!-- end service item -->
-					
+
 					<!-- service item -->
-					<div class="col-md-4 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="900ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 900ms; animation-name: fadeInRight;">
+					<div class="col-md-4 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="900ms" style="visibility: hidden; animation-duration: 500ms; animation-delay: 900ms; animation-name: none;">
 						<div class="service-item">
 							<div class="service-icon">
 								<i class="fa fa-user fa-2x"></i>
 							</div>
-							
+
 							<div class="service-desc">
 								<h3>24/7 Support</h3>
 								<p>CloudCabinet administrators are always there to answer any questions you have, or solve any problems</p>
@@ -800,86 +790,86 @@ body.swal2-iosfix {
 						</div>
 					</div>
 					<!-- end service item -->
-						
+
 				</div>
 			</div>
 		</section>
-		
+
 	    <section class="features">
 			<div class="container">
 				<div class="row">
-				
-					<div style="margin-bottom: 0px; visibility: visible; animation-duration: 500ms; animation-name: bounceInDown;" class="sec-title text-center mb50 wow bounceInDown animated animated" data-wow-duration="500ms">
+
+					<div style="margin-bottom: 0px; visibility: hidden; animation-duration: 500ms; animation-name: none;" class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
 						<h2>Responsive on all devices</h2>
 						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
 						<p style="text-align: center;">Cloud Cabinet is highly responsive and it works on all devices! Have all the files with you whereever you go!</p>
 					</div>
 
 					<!-- service item -->
-					<div style="padding: 0px 50px; visibility: visible; animation-duration: 500ms; animation-name: fadeInUp;" class="col-md-12 wow fadeInUp animated" data-wow-duration="500ms">
+					<div style="padding: 0px 50px; visibility: hidden; animation-duration: 500ms; animation-name: none;" class="col-md-12 wow fadeInUp" data-wow-duration="500ms">
 						<div class="responsive-cabinet">
 						</div>
 					</div>
 					<!-- end service item -->
-						
+
 				</div>
 			</div>
 		</section>
 
-		<section id="facts" class="facts" style="background-image: url(&quot;img/tech1.jpg&quot;); background-position: 50% 33px;">
+		<section id="facts" class="facts" style="background-image: url(./img/tech1.jpg);">
 			<div id="how" class="parallax-overlay">
 				<div class="container">
     				<div class="row">
-    				
+
     					<div class="sec-title text-center">
     						<h2>How it works?</h2>
     						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
     					</div>
-    					
+
     					<div class="sec-sub-title text-center">
     						<p style="color: white;">Very similar to the real-life file storage! You have an online Cabinet, hosted on our cloud. Inside the cabinet, as you may probably think, there are Drawers! Every Drawer has folders and this is where you save your files - in folders! That way, You will save your files where you should - in proper folders and it will be tidy all the time!</p>
     					</div>
-    					
+
     				</div>
     			</div>
 			</div>
 		</section>
-		
+
 	    <section id="start" class="features">
 			<div class="container">
 				<div class="row">
-				
-					<div style="margin-bottom: 0px; visibility: visible; animation-duration: 500ms; animation-name: bounceInDown;" class="sec-title text-center mb50 wow bounceInDown animated animated" data-wow-duration="500ms">
+
+					<div style="margin-bottom: 0px; visibility: hidden; animation-duration: 500ms; animation-name: none;" class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
 						<h2>How to start?</h2>
 						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
 						<p style="font-size: 22px; text-align: center; margin-top: 25px; margin-bottom: 25px;">All you have to do is join CloudCabinet by creating an account. Once your account is created, you get your Cabinet ready, for free!</p>
-						<a href="http://cloudcabinet.haddata.com/index.php#body"><button style="background-color: #0eb493; border: none; display: block; margin: auto; margin-top: 20px !important; color: white; padding: 10px 20px 10px 20px;" class="btn btn-primary">Join Now!</button></a>
+						<a href="https://haddata.com/cloudcabinet/#body"><button style="background-color: #0eb493; border: none; display: block; margin: auto; margin-top: 20px !important; color: white; padding: 10px 20px 10px 20px;" class="btn btn-primary">Join Now!</button></a>
 					</div>
-					
+
 				</div>
 			</div>
 		</section>
-		
+
 		<footer id="footer" class="footer">
 			<div class="container">
 				<div class="row">
-				
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated animated" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-name: fadeInUp;">
+
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" style="visibility: hidden; animation-duration: 500ms; animation-name: none;">
 						<div class="footer-single">
-							<img style="width: 200px;" src="./CloudCabinet - Homepage_files/logo.png" alt="">
+							<img style="width: 200px;" src="./img/logo.png" alt="">
 							<p>The best way to store your data.</p>
 						</div>
 					</div>
-				
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated animated" data-wow-duration="500ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 300ms; animation-name: fadeInUp;">
+
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 500ms; animation-delay: 300ms; animation-name: none;">
 					</div>
-				
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated animated" data-wow-duration="500ms" data-wow-delay="600ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 600ms; animation-name: fadeInUp;">
+
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms" style="visibility: hidden; animation-duration: 500ms; animation-delay: 600ms; animation-name: none;">
 					</div>
-				
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated animated" data-wow-duration="500ms" data-wow-delay="900ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 900ms; animation-name: fadeInUp;">
+
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms" style="visibility: hidden; animation-duration: 500ms; animation-delay: 900ms; animation-name: none;">
 					</div>
-					
+
 				</div>
 				<div class="row">
 					<div class="col-md-12">
@@ -890,36 +880,36 @@ body.swal2-iosfix {
 				</div>
 			</div>
 		</footer>
-		
-		<a href="javascript:void(0);" id="back-top" style="display: block;"><i class="fa fa-angle-up fa-3x"></i></a>
+
+		<a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
 
 		<!-- Essential jQuery Plugins
 		================================================== -->
 		<!-- Main jQuery -->
-        <script src="./CloudCabinet - Homepage_files/jquery-1.11.1.min.js"></script>
+        <script src="./js/jquery-1.11.1.min.js"></script>
 		<!-- Single Page Nav -->
-        <script src="./CloudCabinet - Homepage_files/jquery.singlePageNav.min.js"></script>
+        <script src="./js/jquery.singlePageNav.min.js"></script>
 		<!-- Twitter Bootstrap -->
-        <script src="./CloudCabinet - Homepage_files/bootstrap.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
 		<!-- jquery.fancybox.pack -->
-        <script src="./CloudCabinet - Homepage_files/jquery.fancybox.pack.js"></script>
+        <script src="./js/jquery.fancybox.pack.js"></script>
 		<!-- jquery.mixitup.min -->
-        <script src="./CloudCabinet - Homepage_files/jquery.mixitup.min.js"></script>
+        <script src="./js/jquery.mixitup.min.js"></script>
 		<!-- jquery.parallax -->
-        <script src="./CloudCabinet - Homepage_files/jquery.parallax-1.1.3.js"></script>
+        <script src="./js/jquery.parallax-1.1.3.js"></script>
 		<!-- jquery.countTo -->
-        <script src="./CloudCabinet - Homepage_files/jquery-countTo.js"></script>
+        <script src="./js/jquery-countTo.js"></script>
 		<!-- jquery.appear -->
-        <script src="./CloudCabinet - Homepage_files/jquery.appear.js"></script>
+        <script src="./js/jquery.appear.js"></script>
 		<!-- Contact form validation -->
-		<script src="./CloudCabinet - Homepage_files/jquery.form.js"></script>
-		<script src="./CloudCabinet - Homepage_files/jquery.validate.min.js"></script>
+		<script src="./js/jquery.form.js"></script>
+		<script src="./js/jquery.validate.min.js"></script>
 		<!-- Google Map -->
-        <script type="text/javascript" src="./CloudCabinet - Homepage_files/js"></script>
+        <!-- <script type="text/javascript" src="./CloudCabinet - Homepage_files/js"></script> -->
 		<!-- jquery easing -->
-        <script src="./CloudCabinet - Homepage_files/jquery.easing.min.js"></script>
+        <script src="./js/jquery.easing.min.js"></script>
 		<!-- jquery easing -->
-        <script src="./CloudCabinet - Homepage_files/wow.min.js"></script>
+        <script src="./js/wow.min.js"></script>
 		<script>
 			var wow = new WOW ({
 				boxClass:     'wow',      // animated element css class (default is wow)
@@ -930,16 +920,16 @@ body.swal2-iosfix {
 			  }
 			);
 			wow.init();
-		</script> 
+		</script>
 		<!-- Custom Functions -->
-        <script src="./CloudCabinet - Homepage_files/custom.js"></script>
-		
+        <script src="./js/custom.js"></script>
+
 		<script type="text/javascript">
 			$(function(){
 				/* ========================================================================= */
 				/*	Contact Form
 				/* ========================================================================= */
-				
+
 				$('#contact-form').validate({
 					rules: {
 						name: {
@@ -990,9 +980,9 @@ body.swal2-iosfix {
 				});
 			});
 		</script>
-	
-	
-	
+
+
+
 
 
 
