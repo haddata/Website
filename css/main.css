@@ -1,6 +1,6 @@
 
 /* =================================== */
-/*	Basic Style 
+/*	Basic Style
 /* =================================== */
 
 body {
@@ -8,7 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     line-height: 21px;
 	font-size: 13px;
-    color: #6a737b;
+    color: #7b736a;
 }
 
 ol, ul {
@@ -23,7 +23,7 @@ figure, p {
 
 a {
     color: #fff;
-	
+
     -webkit-transition: all .3s ease-in 0s;
        -moz-transition: all .3s ease-in 0s;
         -ms-transition: all .3s ease-in 0s;
@@ -55,17 +55,17 @@ h4, h5, h6 {
     content: " ";
     display: table;
 }
- 
+
 .clear:after {
    clear: both;
 }
- 
+
 .clear {
    *zoom: 1;
 }
 
 span.color {
-	color: #0feb9e;
+	color: #643b31;
 }
 
 body > section,
@@ -76,7 +76,7 @@ body > section,
 .sec-title {}
 
 .sec-title h2 {
-  color: #0eb493;
+  color: #C9B79C;
   font-size: 28px;
   font-weight: 800;
   text-transform: uppercase;
@@ -144,7 +144,7 @@ body > section,
   background-color: rgba(16, 22, 54, 0.2);
   border: 0 none;
   margin: 0;
-  
+
     -webkit-transition: background-color 800ms linear;
        -moz-transition: background-color 800ms linear;
 	    -ms-transition: background-color 800ms linear;
@@ -214,7 +214,7 @@ body > section,
 
 .carousel-caption p:before,
 .carousel-caption p:after {
-color: #0feb9e;
+color: #643b31;
 content: "___";
 position: relative;
 top: -8px;
@@ -273,7 +273,7 @@ top: -8px;
 ==========================================*/
 
 .features {
-  background-color: #f4f7f9;
+  background-color: #f9f7f4;
 }
 
 .owl-controls {
@@ -297,14 +297,14 @@ top: -8px;
 }
 
 .owl-controls .owl-page.active span {
-  background: #062033;
+  background: #7b736a;
   border: 0;
 }
 
 .service-icon {
-  border: 1px solid #0eb493;
+  border: 1px solid #C9B79C;
   border-radius: 50%;
-  color: #0eb493;
+  color: #C9B79C;
   float: left;
   padding: 10px 13px;
 }
@@ -316,7 +316,7 @@ top: -8px;
 }
 
 .service-desc h3 {
-  color: #062033;
+  color: #7b736a;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 25px;
@@ -338,7 +338,7 @@ top: -8px;
 }
 
 .work-filter ul li a {
-  color: #062033;
+  color: #7b736a;
   display: block;
   font-size: 14px;
   font-weight: 700;
@@ -349,7 +349,7 @@ top: -8px;
 
 .work-filter ul li a:hover,
 .work-filter ul li a.active {
-  background-color: #0eb493;
+  background-color: #C9B79C;
   border-radius: 6px;
   color: #fff;
   padding: 5px 17px;
@@ -380,15 +380,15 @@ top: -8px;
 	width: 100%;
 	height: 100%;
 	color: #fff;
-	
+
 	opacity: 0;
 	filter: alpha(opacity=0);
-	
-	-webkit-transition: all 450ms ease-out 0s;	
+
+	-webkit-transition: all 450ms ease-out 0s;
 	   -moz-transition: all 450ms ease-out 0s;
 		 -o-transition: all 450ms ease-out 0s;
 		    transition: all 450ms ease-out 0s;
-		  
+
 	-webkit-transform: rotateY(180deg) scale(0.5,0.5);
 	   -moz-transform: rotateY(180deg) scale(0.5,0.5);
 		-ms-transform: rotateY(180deg) scale(0.5,0.5);
@@ -399,7 +399,7 @@ top: -8px;
 .work-item:hover .overlay {
 	opacity: 1;
 	filter: alpha(opacity=100);
-	
+
 	-webkit-transform: rotateY(0deg) scale(1,1);
 	   -moz-transform: rotateY(0deg) scale(1,1);
 		-ms-transform: rotateY(0deg) scale(1,1);
@@ -456,7 +456,7 @@ top: -8px;
 }
 
 .team-member h4 {
-  color: #062033;
+  color: #7b736a;
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
@@ -467,7 +467,7 @@ top: -8px;
 	cursor: pointer;
 	opacity: 1;
 	filter: alpha(opacity=100);
-	
+
 	-webkit-transform: rotateY(0deg) scale(1,1);
 	   -moz-transform: rotateY(0deg) scale(1,1);
 		-ms-transform: rotateY(0deg) scale(1,1);
@@ -476,7 +476,7 @@ top: -8px;
 }
 
 .team-member:hover h4 {
-  color: #0eb493;
+  color: #C9B79C;
 }
 
 .team-member .social-links {
@@ -559,7 +559,7 @@ top: -8px;
 }
 
 .contact-address h3 {
-  color: #062033;
+  color: #7b736a;
   font-size: 22px;
   line-height: 32px;
   margin-bottom: 25px;
@@ -572,7 +572,7 @@ top: -8px;
 .contact-form {}
 
 .contact-form h3 {
-  color: #062033;
+  color: #7b736a;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
@@ -646,13 +646,13 @@ label.error {
 
 
 .footer {
-  background-color: #1ea78d;
-  border-top: 5px solid #062033;
+  background-color: #C9B79C;
+  border-top: 5px solid #7b736a;
   color: #fff;
 }
 
 .footer a:hover {
-  color: #062033;
+  color: #7b736a;
 }
 
 .footer h6 {
@@ -705,7 +705,7 @@ label.error {
 }
 
 .credit a {
-  color: #062033;
+  color: #7b736a;
 }
 
 .credit a:hover {

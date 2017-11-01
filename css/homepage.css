@@ -8,22 +8,24 @@
     max-width: 100%;
     height: 100vh;
     overflow: auto;
-    background-color: #f4f7f9;
-    border-left: 10px solid #007f93;
+    background-color: #f9f7f4;
+    border-left: 10px solid #643b31;
     min-height: 550px;
 }
 
 #logreg-wrapper a
 {
-    color: #007f93 !important;
+    color: #643b31 !important;
 }
 
 #cloudcabinet-draw
 {
-    background-image: url(../img/cloudcabinet.png);
-    background-size: 100% 100%;
-    height: 100%;
-    width: 100%;
+    background-image: url(../img/cloud-cabinet-icon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /*background-size: 100% 100%;*/
+    /*height: 100%;
+    width: 100%;*/
     min-height: 480px;
 }
 
@@ -47,13 +49,13 @@ body
 
 .form-control:focus
 {
-    border-color: #007f93;
+    border-color: #643b31;
 }
 
 .form-control
 {
     height: 40px;
-    color: #007f93;
+    color: #643b31;
     font-size: 18px;
 }
 
@@ -65,7 +67,7 @@ body
     left: 0px;
     z-index: 1000;
     height: 50px;
-    background-color: #007f93;
+    background-color: #643b31;
 }
 
 #presentation-wrapper
