@@ -1,0 +1,176 @@
+body
+{
+    background-color: #f9f7f4;
+    padding-top: 50px;
+    overflow-x: hidden;
+}
+
+#header
+{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    height: 50px;
+    background-color: #643b31;
+}
+
+#pre-content
+{
+    /*margin: auto;
+    border-bottom: 100px solid black;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 80%;*/
+    margin-top: 50px;
+    height: 0;
+    /*background-color: #000000;*/
+    /*margin-top: 50px;
+    width: 80%;
+    height: 100px;
+    transform: perspective(50px) rotateX(10deg);
+    background-color: #000000;*/
+
+}
+
+#wrapper
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+    display: block;
+    width: 80%;
+    overflow: auto;
+    background-image: url('../img/gray-texture.jpg');
+    background-repeat: repeat;
+    /*background-color: #FAFAFA;*/
+}
+
+.drawer
+{
+    /*background-image: url('images/drawer.png');*/
+    margin: 1% auto;
+    background-size: 95% 95%;
+    border-color: #000000;
+    border-width: 10px;
+    border-style: solid;
+    /*background-color: #FAFAFA;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    cursor: pointer;
+    padding-top: 30%;
+}
+
+.file
+{
+    min-height: 120px;
+    width: 120px;
+    background-image: url('http://www.freeiconspng.com/uploads/no-image-icon-13.png');
+    margin: auto;
+    background-color: #FAFAFA;
+    background-size: 95% 95%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.file-wrapper
+{
+    cursor: pointer;
+}
+
+.newcab
+{
+    background-color: #643b31;
+    min-height: 50px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.cabinet-inner
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+}
+
+.folder
+{
+    background-image: url('images/folder.png');
+    background-size: 100% 100%;
+    padding-top: 60%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.cabinet-inner h3
+{
+    text-align: center;
+    background-color: #f9f7f4;
+    margin: 0 auto;
+    width: 100%;
+    white-space: nowrap;;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.label-box {
+  background-image: url(../img/metal-texture.jpg);
+  padding: 10px;
+  margin: auto;
+  max-width: 300px;
+}
+
+.newDrawer
+{
+    background-color: #643b31;
+    min-width: 100px;
+    width: 150px;
+    height: 120px;
+    min-height: 100px;
+}
+
+#pre-content
+{
+    min-height: 30px;
+}
+
+@media only screen and (max-width : 768px)
+{
+    #wrapper
+    {
+        width: 100%;
+    }
+}
+
+i
+{
+    cursor: pointer;
+}
+
+.upload-form-wrapper
+{
+    max-width: 350px;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+#footer
+{
+    background-color: #643b31;
+    margin-top: 30px;
+    width: 100%;
+    min-height: 100px;
+}
