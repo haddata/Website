@@ -52,7 +52,7 @@ body
 
 .drawer
 {
-    /*background-image: url('images/drawer.png');*/
+    background-image: url('../img/drawer.png');
     margin: 1% auto;
     background-size: 95% 95%;
     border-color: #000000;
@@ -107,7 +107,7 @@ body
 
 .folder
 {
-    background-image: url('images/folder.png');
+    background-image: url('../img/folder.png');
     background-size: 100% 100%;
     padding-top: 60%;
     width: 100%;
@@ -123,6 +123,8 @@ body
     white-space: nowrap;;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .label-box {
