@@ -47,6 +47,7 @@ body
     overflow: auto;
     background-image: url('../img/gray-texture.jpg');
     background-repeat: repeat;
+    overflow: auto;
     /*background-color: #FAFAFA;*/
 }
 
@@ -90,9 +91,11 @@ body
     padding-top: 10px;
     padding-bottom: 5px;
     cursor: pointer;
-    width: 100%;
+    width: 80%;
+    margin-top: 100px;
     margin: auto;
     display: block;
+    box-sizing: border-box;
 }
 
 .cabinet-inner
