@@ -765,48 +765,60 @@ body.swal2-iosfix {
     <div id="wrapper" style="border: 5px solid #007f93;">
 
 
-
-                <div class="col-md-6 search-item">
+                <div class="col-md-12 search-item" style="padding: 0px; background-color: #fce2a7;">
 
                 <div style="position: absolute; top: 5%; right: 5%;">
                 <i onclick="trashThis(&#39;Test 2/Test Folder 2/&#39;)" style="color: #007f93;" class="fa fa-trash-o fa-2x" aria-hidden="true"></i>
                 </div>
 
 
-                <div onclick="openDrawer(&#39;Test 2/Test Folder 2/&#39;)" class="folder"><h3 class="search-text" style="text-align: center; padding-top: 20px;">Test Folder 2</h3></div>
+                <div onclick="openDrawer(&#39;Test 2/Test Folder 2/&#39;)" class="folder" style="padding-top: 10%;"><h3 class="search-text" style="text-align: center; padding-top: 20px;">Test Folder 2</h3></div>
 
                 </div>
 
 
 
-                <div class="col-md-6 search-item">
+              <div class="col-md-12 search-item" style="padding: 0px; background-color: #fce2a7;">
 
                 <div style="position: absolute; top: 5%; right: 5%;">
                 <i onclick="trashThis(&#39;Test 2/Test Folder/&#39;)" style="color: #007f93;" class="fa fa-trash-o fa-2x" aria-hidden="true"></i>
                 </div>
 
 
-                <div onclick="openDrawer(&#39;Test 2/Test Folder/&#39;)" class="folder"><h3 class="search-text" style="text-align: center; padding-top: 20px;">Test Folder</h3></div>
+                <div onclick="openDrawer(&#39;Test 2/Test Folder/&#39;)" class="folder" style="padding-top: 10%;"><h3 class="search-text" style="text-align: center; padding-top: 20px;">Test Folder</h3></div>
 
                 </div>
 
 
 
-                <div class="col-md-6 search-item">
+                <div class="col-md-12 search-item" style="padding: 0px; background-color: #fce2a7;">
 
                 <div style="position: absolute; top: 5%; right: 5%;">
                 <i onclick="trashThis(&#39;Test 2/test folder 3/&#39;)" style="color: #007f93;" class="fa fa-trash-o fa-2x" aria-hidden="true"></i>
                 </div>
 
 
-                <div onclick="openDrawer(&#39;Test 2/test folder 3/&#39;)" class="folder"><h3 class="search-text" style="text-align: center; padding-top: 20px;">test folder 3</h3></div>
+                <div onclick="openDrawer(&#39;Test 2/test folder 3/&#39;)" class="folder" style="padding-top: 10%;"><h3 class="search-text" style="text-align: center; padding-top: 20px;">test folder 3</h3></div>
 
                 </div>
+                <div class="drawer col-md-12 search-item">
+
+                <div style="position: absolute; top: 10%; right: 5%; z-index: 100;">
+                <i onclick="trashThis(&#39;Test/&#39;);" style="color: #007f93;" class="fa fa-trash-o fa-2x" aria-hidden="true"></i>
+                </div>
+
+                <div class="cabinet-inner" onclick="openCabinet(&#39;Test/&#39;)">
+                  <div class="label-box">
+                    <h3 class="search-text">Test</h3>
+                </div>
+              </div>
+            </div>
 
 
-        <div class="col-md-4" onclick="newDrawer()"><div class="newDrawer"><i style="text-align: center; width: 100%; padding-top: 40px; color: white;" class="fa fa-plus fa-3x" aria-hidden="true"></i></div></div>
+
 
     </div>
+            <div class="col-md-4" onclick="newDrawer()"><div class="newDrawer"><i style="text-align: center; width: 100%; padding-top: 40px; color: white;" class="fa fa-plus fa-3x" aria-hidden="true"></i></div></div>
 
     <div id="footer"></div>
 

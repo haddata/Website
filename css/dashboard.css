@@ -67,6 +67,11 @@ body
     padding-top: 30%;
 }
 
+.folder-container {
+  background-color: white;
+  width: 100%;
+}
+
 .file
 {
     min-height: 120px;
@@ -110,11 +115,15 @@ body
 
 .folder
 {
-    background-image: url('../img/folder.png');
+    background-image: url('../img/manila.png');
     background-size: 100% 100%;
-    padding-top: 60%;
+    /*padding-top: 60%;*/
     width: 100%;
     cursor: pointer;
+}
+
+.folder h3 {
+  margin: 0 auto;
 }
 
 .cabinet-inner h3
