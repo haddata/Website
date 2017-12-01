@@ -1,5 +1,8 @@
 <!DOCTYPE html>
+<!-- saved from url=(0059)https://haddata.com/cloudcabinet/cabinet.php?name=Test%202/ -->
 <html xmlns="http://www.w3.org/1999/xhtml" class="gr__haddata_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <script> var name = "Test 2/"; </script>
 
     <script src="./js/main.js"></script>
 	<script src="./js/sweetalert2.all.min.js"></script><style type="text/css">body.swal2-shown {
@@ -525,14 +528,13 @@ body.swal2-iosfix {
 	<link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="./css/dashboard.css" rel="stylesheet" type="text/css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cloud Cabinet - Dashboard</title>
 
     <script>
 
-        function openCabinet(prefix)
+        function openDrawer(drawer)
         {
-            window.location.href = "cabinet.php?name="+prefix;
+            window.location.href = "drawer.php?name="+drawer;
         }
 
     </script>
@@ -540,7 +542,6 @@ body.swal2-iosfix {
 </head>
 
 <body data-gr-c-s-loaded="true">
-
 
 
     <style>
@@ -730,7 +731,7 @@ body.swal2-iosfix {
 
             <div class="header-icon"><a href="https://haddata.com/cloudcabinet/dashboard.php"><i class="fa fa-dashboard fa-2x"></i></a></div>
             <div class="header-icon"><i onclick="SearchToggle()" class="fa fa-search fa-2x" aria-hidden="true"></i><input onkeyup="searchWord()" type="text" id="search-bar"></div>
-            <div class="header-icon"><a href="https://haddata.com/cloudcabinet/dashboard.php#" data-toggle="tooltip" data-placement="bottom" title="Log Out"><i onclick="logOut()" class="fa fa-power-off fa-2x" aria-hidden="true"></i></a></div>
+            <div class="header-icon"><a href="https://haddata.com/cloudcabinet/cabinet.php?name=Test%202/#" data-toggle="tooltip" data-placement="bottom" title="Log Out"><i onclick="logOut()" class="fa fa-power-off fa-2x" aria-hidden="true"></i></a></div>
 
         </div>
 	</div>
@@ -760,42 +761,46 @@ body.swal2-iosfix {
 
     <div id="pre-content">
     </div>
-    <div id="wrapper" style="position: relative;">
-    <!-- <div id="wrapper" style="border: 5px solid #007f93; position: relative;"> -->
+
+    <div id="wrapper" style="border: 5px solid #007f93;">
 
 
+                <div class="col-md-12 search-item" style="padding: 0px; background-color: #fce2a7;">
 
-
-              <div class="drawer col-md-12 search-item">
-
-                <div style="position: absolute; top: 10%; right: 5%; z-index: 100;">
-                <i onclick="trashThis(&#39;Test 2/&#39;);" style="color: #007f93;" class="fa fa-trash-o fa-2x" aria-hidden="true"></i>
+                <div style="position: absolute; top: 5%; right: 5%;">
+                <i onclick="trashThis(&#39;Test 2/Test Folder 2/&#39;)" style="color: #007f93;" class="fa fa-trash-o fa-2x" aria-hidden="true"></i>
                 </div>
 
-                <div class="cabinet-inner" onclick="openCabinet(&#39;Test 2/&#39;)">
-                  <div class="label-box">
-                    <h3 class="search-text">Test 2 ugg jggkjgkjgkjhgkgkjgkjgkjgkjhgkjgkjgk </h3>
-                  </div>
-                </div>
-              </div>
 
+                <div onclick="openDrawer(&#39;Test 2/Test Folder 2/&#39;)" class="folder" style="padding-top: 10%;"><h3 class="search-text" style="text-align: center; padding-top: 20px;">Test Folder 2</h3></div>
 
-
-                <div class="drawer col-md-12 search-item">
-
-                <div style="position: absolute; top: 10%; right: 5%; z-index: 100;">
-                <i onclick="trashThis(&#39;Test 3/&#39;);" style="color: #007f93;" class="fa fa-trash-o fa-2x" aria-hidden="true"></i>
                 </div>
 
-                <div class="cabinet-inner" onclick="openCabinet(&#39;Test 3/&#39;)">
-                  <div class="label-box">
-                    <h3 class="search-text">Test 3</h3>
-                  </div>
+
+
+              <div class="col-md-12 search-item" style="padding: 0px; background-color: #fce2a7;">
+
+                <div style="position: absolute; top: 5%; right: 5%;">
+                <i onclick="trashThis(&#39;Test 2/Test Folder/&#39;)" style="color: #007f93;" class="fa fa-trash-o fa-2x" aria-hidden="true"></i>
                 </div>
-              </div>
+
+
+                <div onclick="openDrawer(&#39;Test 2/Test Folder/&#39;)" class="folder" style="padding-top: 10%;"><h3 class="search-text" style="text-align: center; padding-top: 20px;">Test Folder</h3></div>
+
+                </div>
 
 
 
+                <div class="col-md-12 search-item" style="padding: 0px; background-color: #fce2a7;">
+
+                <div style="position: absolute; top: 5%; right: 5%;">
+                <i onclick="trashThis(&#39;Test 2/test folder 3/&#39;)" style="color: #007f93;" class="fa fa-trash-o fa-2x" aria-hidden="true"></i>
+                </div>
+
+
+                <div onclick="openDrawer(&#39;Test 2/test folder 3/&#39;)" class="folder" style="padding-top: 10%;"><h3 class="search-text" style="text-align: center; padding-top: 20px;">test folder 3</h3></div>
+
+                </div>
                 <div class="drawer col-md-12 search-item">
 
                 <div style="position: absolute; top: 10%; right: 5%; z-index: 100;">
@@ -808,10 +813,12 @@ body.swal2-iosfix {
                 </div>
               </div>
             </div>
-          </div>
 
 
-            <div class="newcab" onclick="newCabinet()"><i style="text-align: center; width: 100%; color: white;" class="fa fa-plus fa-3x" aria-hidden="true"></i></div></div>
+
+
+    </div>
+            <div class="col-md-4" onclick="newDrawer()"><div class="newDrawer"><i style="text-align: center; width: 100%; padding-top: 40px; color: white;" class="fa fa-plus fa-3x" aria-hidden="true"></i></div></div>
 
     <div id="footer"></div>
 

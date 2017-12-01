@@ -47,12 +47,13 @@ body
     overflow: auto;
     background-image: url('../img/gray-texture.jpg');
     background-repeat: repeat;
+    overflow: auto;
     /*background-color: #FAFAFA;*/
 }
 
 .drawer
 {
-    /*background-image: url('images/drawer.png');*/
+    background-image: url('../img/drawer.png');
     margin: 1% auto;
     background-size: 95% 95%;
     border-color: #000000;
@@ -64,6 +65,11 @@ body
     width: 100%;
     cursor: pointer;
     padding-top: 30%;
+}
+
+.folder-container {
+  background-color: white;
+  width: 100%;
 }
 
 .file
@@ -90,9 +96,11 @@ body
     padding-top: 10px;
     padding-bottom: 5px;
     cursor: pointer;
-    width: 100%;
+    width: 80%;
+    margin-top: 100px;
     margin: auto;
     display: block;
+    box-sizing: border-box;
 }
 
 .cabinet-inner
@@ -107,11 +115,15 @@ body
 
 .folder
 {
-    background-image: url('images/folder.png');
+    background-image: url('../img/manila.png');
     background-size: 100% 100%;
-    padding-top: 60%;
+    /*padding-top: 60%;*/
     width: 100%;
     cursor: pointer;
+}
+
+.folder h3 {
+  margin: 0 auto;
 }
 
 .cabinet-inner h3
@@ -123,6 +135,8 @@ body
     white-space: nowrap;;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .label-box {
